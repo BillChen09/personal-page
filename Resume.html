@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jinkun Chen - Resume</title>
+  <style>
+    /* Global Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f1f1f1;
+      color: #333;
+    }
+    header {
+      background-color: #3F51B5; /* Indigo */
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 10px 0;
+    }
+    nav a {
+      color: #3F51B5;
+      text-decoration: none;
+      margin: 10px 15px;
+      font-weight: bold;
+    }
+    main {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+    section {
+      background-color: #fff;
+      margin-bottom: 20px;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    section h2 {
+      border-bottom: 2px solid #3F51B5;
+      padding-bottom: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #e0e0e0;
+    }
+    /* Responsive Styles */
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+      }
+      nav a {
+        margin: 5px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Jinkun Chen</h1>
+    <p>College Student | Computer Science Major | Mathematics Minor</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hello, I'm Jinkun Chen, a college student currently studying at The Pennsylvania State University. I major in Computer Science with a minor in Mathematics. I am passionate about programming, system-level development, compiler design, and recursive algorithms. I actively engage in various projects to enhance my full-stack development skills.</p>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <h3>The Pennsylvania State University</h3>
+      <p><strong>Degree:</strong> Bachelor of Science in Computer Science, Mathematics Minor</p>
+      <p><strong>Duration:</strong> Aug '21 - Dec '25</p>
+      <p><strong>Location:</strong> State College, PA</p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills & Expertise</h2>
+      <ul>
+        <li><strong>Programming Languages:</strong> Python, Java, C, C++, Verilog, HTML/CSS/JS (in progress), MATLAB (in progress)</li>
+        <li><strong>Frameworks/Tools:</strong> Flask, Java Swing, Apache Derby, NetBeans, Visual Studio, VS Code, MySQL (in progress), PyCharm (in progress)</li>
+        <li><strong>Core Competencies:</strong> Full-Stack Development, Object-Oriented Programming (OOP), Compiler Design, System-Level Programming, Recursive Algorithms</li>
+        <li><strong>Hardware Knowledge:</strong> Verilog HDL, MIPS Architecture, Pipelining, Digital Logic Design</li>
+        <li><strong>Languages:</strong> English (business writing), Chinese (native), Japanese (college coursework)</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Syntax Error Detection Program (Python)</h3>
+        <ul>
+          <li>Designed a syntax analyzer to detect spelling errors, syntax errors, and scope violations in a custom programming language.</li>
+          <li>Built a recursive descent parser supporting variable declarations, arithmetic expressions, conditionals (if-else), and loops (while).</li>
+          <li>Integrated a lexical analyzer to tokenize input and validate complex nested statements and invalid inputs.</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <h3>Course Selection System (Java | Database | Swing GUI)</h3>
+        <ul>
+          <li>Developed a course management system with distinct interfaces for students and administrators, using Apache Derby as the backend.</li>
+          <li>Admin functions: Add/remove semesters, courses, and students; Student functions: View, register, and deregister courses.</li>
+          <li>Designed a database schema to ensure data consistency and implemented the user interface using Swing in NetBeans.</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <h3>Linux Disk Read/Write Program with Caching (C)</h3>
+        <ul>
+          <li>Developed a Linux-based disk read/write program in C with a caching mechanism, achieving an ~80% cache hit rate for random I/O operations over socket-based network communication.</li>
+          <li>Enhanced performance using system-level debugging tools and performed stress testing to ensure scalability and reliability.</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <h3>Pipelined MIPS Processor Implementation (Verilog)</h3>
+        <ul>
+          <li>Implemented a 5-stage pipelined MIPS processor in Verilog, including modules for Program Counter, Register File, ALU, and Hazard Detection Unit.</li>
+          <li>Designed forwarding logic and pipeline registers (IF/ID, ID/EX, EX/MEM, MEM/WB) to reduce stalls and improve instruction throughput.</li>
+          <li>Tested functionality with arithmetic operations (add, sub) and memory instructions (lw, sw).</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <h3>Group Project: web-based application(In Progress)</h3>
+        <ul>
+          <li>Degisned and normalized a database for e-commerce software</li>
+          <li>Implemented interfaces for users, sellers, and admin and functions of buy, and sell products, chart, log in..etc</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:C2219656143k@outlook.com">C2219656143k@outlook.com</a></p>
+      <p>School Email: <a href="mailto:jjc7132@psu.edu">jjc7132@psu.edu</a></p>
+      <p>Phone: +1 7176239547</p>
+      <p>Github: <a href="https://github.com/BillChen09" target="_blank">github.com/BillChen09</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Jinkun Chen. All rights reserved.</p>
+  </footer>
+</body>
+</html>
