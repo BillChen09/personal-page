@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Monomakh&family=Sigmar&family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Monomakh&family=Sigmar&family=Tektur:wght@400..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jinkun Chen - Page</title>
@@ -9,68 +15,112 @@
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
   <link rel="manifest" href="site.webmanifest">
   <style>
-    /* Global Styles */
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Roboto', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f1f1f1;
+      background: linear-gradient(to right, #ece9e6, #ffffff);
       color: #333;
     }
+
     header {
-      background-color: #3F51B5; /* Indigo */
+      background: linear-gradient(135deg, #3F51B5, #5C6BC0);
       color: #fff;
-      padding: 20px;
+      padding: 40px 20px;
       text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      font-family: "Sigmar", sans-serif;
+ 	  font-weight: 400;
+  	  font-style: normal;
     }
+
     nav {
-      background-color: #fff;
+      background-color: #ffffff;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      padding: 10px 0;
+      padding: 15px 0;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     }
+
     nav a {
       color: #3F51B5;
       text-decoration: none;
-      margin: 10px 15px;
+      margin: 10px 20px;
       font-weight: bold;
+      transition: color 0.3s ease;
+      font-family: "Boldonse", system-ui;
+  	  font-weight: 400;
+  	  font-style: normal;
     }
+
+    nav a:hover {
+      color: #1A237E;
+ 	  transform: scale(1.2);
+    }
+
     main {
-      max-width: 800px;
-      margin: 20px auto;
+      max-width: 1000px;
+      margin: 30px auto;
       padding: 0 20px;
     }
+
     section {
       background-color: #fff;
-      margin-bottom: 20px;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      margin-bottom: 25px;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
     }
+
     section h2 {
-      border-bottom: 2px solid #3F51B5;
-      padding-bottom: 10px;
+      border-left: 6px solid #3F51B5;
+      padding-left: 12px;
+      color: #3F51B5;
+      margin-bottom: 20px;
+ 	  font-family: "Sigmar", sans-serif;
+ 	  font-weight: 400;
+ 	  font-style: normal;
     }
+
+    .project h3 {
+      color: #333;
+      margin-top: 0;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
     footer {
       text-align: center;
-      padding: 15px;
+      padding: 20px;
       background-color: #e0e0e0;
+      font-size: 14px;
     }
-    /* Responsive Styles */
+
+    a {
+      color: #3F51B5;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
     @media (max-width: 600px) {
       nav {
         flex-direction: column;
       }
+
       nav a {
-        margin: 5px 0;
+        margin: 8px 0;
       }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Jinkun Chen</h1>
+    <h1 >Jinkun Chen</h1>
     <p>College Student | Computer Science Major | Mathematics Minor</p>
   </header>
 
@@ -99,10 +149,10 @@
     <section id="skills">
       <h2>Skills & Expertise</h2>
       <ul>
-        <li><strong>Programming Languages:</strong> Python, Java, C, C++, Verilog, HTML/CSS/JS, MATLAB (in progress)</li>
-        <li><strong>Frameworks/Tools:</strong> Flask, Java Swing, Apache Derby, NetBeans, Visual Studio, VS Code, MySQL, SQLite , PyCharm </li>
-        <li><strong>Core Competencies:</strong> Full-Stack Development, Object-Oriented Programming (OOP), Compiler Design, System-Level Programming, Recursive Algorithms, Relational Database Design & Management</li>
-        <li><strong>Hardware Knowledge:</strong> Verilog HDL, MIPS Architecture, Pipelining, Digital Logic Design, Cache</li>
+        <li><strong>Programming Languages:</strong> Python, Java, C, C++, Verilog, HTML/CSS/JS (in progress), MATLAB (in progress)</li>
+        <li><strong>Frameworks/Tools:</strong> Flask, Java Swing, Apache Derby, NetBeans, Visual Studio, VS Code, MySQL (in progress), PyCharm (in progress)</li>
+        <li><strong>Core Competencies:</strong> Full-Stack Development, Object-Oriented Programming (OOP), Compiler Design, System-Level Programming, Recursive Algorithms</li>
+        <li><strong>Hardware Knowledge:</strong> Verilog HDL, MIPS Architecture, Pipelining, Digital Logic Design</li>
         <li><strong>Languages:</strong> English (business writing), Chinese (native), Japanese (college coursework)</li>
       </ul>
     </section>
@@ -145,10 +195,10 @@
       </div>
 
       <div class="project">
-        <h3>Group Project: web-based application(In Progress)</h3>
+        <h3>Group Project: Web-based Application (In Progress)</h3>
         <ul>
-          <li>Degisned and normalized a database for e-commerce software</li>
-          <li>Implemented interfaces for users, sellers, and admin and functions of buy, and sell products, chart, log in..etc</li>
+          <li>Designed and normalized a database for e-commerce software.</li>
+          <li>Implemented interfaces for users, sellers, and admins; added functions to buy/sell products, display charts, and support login.</li>
         </ul>
       </div>
     </section>
@@ -157,7 +207,7 @@
       <h2>Contact</h2>
       <p>Email: <a href="mailto:C2219656143k@outlook.com">C2219656143k@outlook.com</a></p>
       <p>School Email: <a href="mailto:jjc7132@psu.edu">jjc7132@psu.edu</a></p>
-      <p>Phone: +1 7176239547</p>
+      <p>Phone: +1 717-623-9547</p>
       <p>Github: <a href="https://github.com/BillChen09" target="_blank">github.com/BillChen09</a></p>
     </section>
   </main>
