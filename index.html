@@ -174,6 +174,18 @@
 
     <section id="projects">
       <h2>Projects</h2>
+    <div class="project">
+      <h3>Web-based Application (FLASK | MySQL | HTML | JavaScript | CSS)</h3>
+      <ul>
+        <li>Designed and normalized a relational database for an e-commerce platform.</li>
+        <li>Implemented user interfaces for buyers, sellers, and helpdesk agents.</li>
+        <li><strong>Users:</strong> Purchase products, view orders, submit reviews, edit profile details (card info, addresses, username), search products, browse category hierarchy, change password, and submit requests to the helpdesk.</li>
+        <li><strong>Sellers:</strong> Upload and manage product listings, view received reviews, update profile information (banking info, addresses, username), change password, and respond to helpdesk inquiries.</li>
+        <li><strong>Helpdesk:</strong> View user-submitted requests, claim unassigned tickets, and mark issues as resolved.</li>
+      </ul>
+    </div>
+
+      
       <div class="project">
         <h3>Syntax Error Detection Program (Python)</h3>
         <ul>
@@ -209,14 +221,6 @@
           <li>Tested functionality with arithmetic operations (add, sub) and memory instructions (lw, sw).</li>
         </ul>
       </div>
-
-      <div class="project">
-        <h3>Group Project: Web-based Application (In Progress)</h3>
-        <ul>
-          <li>Designed and normalized a database for e-commerce software.</li>
-          <li>Implemented interfaces for users, sellers, and admins; added functions to buy/sell products, display charts, and support login.</li>
-        </ul>
-      </div>
     </section>
 
     <section id="contact">
@@ -233,4 +237,29 @@
     <p>&copy; 2025 Jinkun Chen. All rights reserved.</p>
   </footer>
 </body>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const sections = document.querySelectorAll("main section");
+    const links = document.querySelectorAll("nav a");
+    sections.forEach((section, index) => {
+      section.style.display = index === 0 ? "block" : "none";
+    });
+
+    links.forEach(link => {
+      link.addEventListener("click", (e) => {
+        e.preventDefault();
+        const targetId = link.getAttribute("href").substring(1);
+        
+        sections.forEach(section => {
+          if (section.id === targetId) {
+            section.style.display = "block";
+          } else {
+            section.style.display = "none";
+          }
+        });
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    });
+  });
+</script>
 </html>
